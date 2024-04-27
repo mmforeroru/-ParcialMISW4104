@@ -1,3 +1,36 @@
-<p>
-  vehiculo works!
-</p>
+<h1>
+  TuSegundazo.com
+  </h1>
+<div class="container-fluid"> 
+  <div class="col-12">
+    <img src="../src/assets/imagentusegundazo.jpg" alt="imagen de pantalla">
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Linea</th>
+          <th scope="col">Modelo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let v of vehiculos">
+          <td scope="row">
+            <dd>{{v.id}}</dd>
+          </td>
+          <td>
+            <dd>{{v.marca}}</dd>
+          </td>
+          <td>
+            <dd>{{v.linea}}</dd>
+          </td>
+          <td>
+            <dd>{{v.modelo}}</dd>
+          </td>
+      </tr>
+      </tbody>
+    </table>
+    <h3>Total nissan:{{contarVehiculosNissan()}}</h3>
+    <h3>Total Chevrolet:{{contarVehiculoschevrolet()}}</h3>
+  </div>
+</div>

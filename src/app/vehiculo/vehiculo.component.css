@@ -1,0 +1,37 @@
+/* Estilos para la tabla */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+  }
+  
+  /* Estilos para el encabezado de la tabla */
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+  }
+  
+  /* Estilos para las filas impares */
+  .table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Estilos para las celdas */
+  .table td,
+  .table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  /* Estilos para las celdas en la primera columna */
+  .table tbody th,
+  .table tbody td:first-child {
+    border-left: 1px solid #dee2e6;
+  }
+  
+  /* Estilos para las celdas en la última columna */
+  .table tbody th,
+  .table tbody td:last-child {
+    border-right: 1px solid #dee2e6;
+  }

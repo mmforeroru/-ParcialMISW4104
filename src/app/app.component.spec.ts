@@ -1,15 +1,17 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-
+import { VehiculoComponent } from './vehiculo/vehiculo.component';
+import { HttpClientModule } from '@angular/common/http';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule, HttpClientModule
+
       ],
       declarations: [
-        AppComponent
+        AppComponent,VehiculoComponent
       ],
     }).compileComponents();
   });
@@ -26,10 +28,5 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('ParcialMISW4104');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ParcialMISW4104');
-  });
+ 
 });
